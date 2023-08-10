@@ -10,7 +10,7 @@ connectToDB();
 app.use(express.json());
 
 //routes
-app.use("/api", require("./Routes/notes"));
+app.use("/api/notes", require("./Routes/notes"));
 app.use("/api/auth", require("./Routes/auth"));
 
 

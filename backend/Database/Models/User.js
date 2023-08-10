@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const { Schema } = mongoose;
 
 const userSchema = new mongoose.Schema(
     {
@@ -20,6 +20,11 @@ const userSchema = new mongoose.Schema(
             type: Date,
             default: Date.now
         },
+        // notes: [{
+        //     type: Schema.Types.ObjectId,
+        //     ref: "Note"
+
+        // }]
     }
 );
 

@@ -18,10 +18,10 @@ const NoteSchema = new mongoose.Schema(
             type: Date,
             default: Date.now
         },
-        // user: {
-        //     type: Schema.Types.ObjectId,
-        //     ref: "User"
-        // }
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }
     }
 );
 
